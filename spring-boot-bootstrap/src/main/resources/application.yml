@@ -1,5 +1,7 @@
 server:
   port: 8081
+  error:
+    path: '/error'
 
 spring:
   application:
@@ -9,3 +11,8 @@ spring:
     enabled: true
     prefix: 'classpath:/templates/'
     suffix: '.html'
+  datasource:
+    driver-class-name: 'org.h2.Driver'
+    url: 'jdbc:h2:mem:bootapp;DB_CLOSE_DELAY=-1'
+    username: 'sa'
+    password:
